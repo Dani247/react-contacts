@@ -8,8 +8,8 @@ const ContactList = props => {
                 return(
                     <Card key={index} s={12} className='teal lighten-5 animated pulse fast' title={<></>} reveal={
                             <>
-                            Apodo: {item.nick} <br/>
-                            Telefono: {item.tel} <br/>
+                            Nickname: {item.nick} <br/>
+                            Phone: {item.tel} <br/>
                             Email: {item.mail}
                             </>
                         }>
@@ -26,7 +26,7 @@ const ContactList = props => {
         )
     }else{
         return(
-            <Card s={12} className='teal lighten-5' title="No existen contactos">
+            <Card s={12} className='teal lighten-5' title="You dont have any contacts">
 
             </Card>
         )

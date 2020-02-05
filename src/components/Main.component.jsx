@@ -37,7 +37,7 @@ class Main extends Component{
                 contacts:[...this.state.contacts, { name, nick, tel, mail }]
             })
         }else{
-            alert('Faltan campos')
+            alert('clomplete the fields')
         }
     }
 
@@ -61,7 +61,7 @@ class Main extends Component{
                 </Col>
 
                 <Col s={12} m={6} className="z-depth-1">
-                    <h5>Lista de contactos</h5>
+                    <h5>Contact list</h5>
                     <ContactList _handleDelete={this._handleDelete} contacts={this.state.contacts}></ContactList>
                 </Col>
             </Row>
